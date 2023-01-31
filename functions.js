@@ -13,8 +13,8 @@ function ocultar(elementoOcultar){
 
 /*Funcion vista página inicio*/
 
-function centrar(){
-    window.scrollTo(0,0);
+function centrar(x,y){
+    window.scrollTo(x,y);
 }
 
 

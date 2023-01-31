@@ -83,7 +83,7 @@
                             <p>- Administración de 42 unidades</p>                            
                         </li>
                     </ul>
-                    <button onclick="ocultar('experiencia');centrar();" class="contraer">▲</button>
+                    <button id= "botonReplegar" onclick="ocultar('experiencia');centrar();" class="contraer">▲</button>
                 </div>
 
                 <button onclick="mostrarInfo('formacion');ocultar('experiencia');ocultar('competencias');" id="botonFormacion"><h3>FORMACION</h3></button>
@@ -109,7 +109,7 @@
                             <p>- Fundamentos de la programación</p>
                         </li>
                     </ul>
-                    <button onclick="ocultar('formacion');centrar();" class="contraer">▲</button>
+                    <button id= "botonReplegar" onclick="ocultar('formacion');centrar();" class="contraer">▲</button>
                 </div>
                 <button onclick="mostrarInfo('competencias');ocultar('formacion');ocultar('experiencia');" id="botonCompetencias"><h3>COMPETENCIAS</h3></button>
                 <div id="competencias">
@@ -123,7 +123,7 @@
                             <h5>INGLES NIVEL MEDIO</h5>
                         </li>
                     </ul>
-                    <button onclick="ocultar('competencias');centrar();" class="contraer">▲</button>
+                    <button onclick="ocultar('competencias');centrar(0,700);" class="contraer">▲</button>
                 </div>        
 
             </div>
