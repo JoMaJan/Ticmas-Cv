@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72303ab1b0.js" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+    <title>CV Jose Manuel Janin</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="containerHeader">
+            <div id="perfil">
+                <img id="fotoPerfil" src="/Imagenes/CV.jpg" alt="Foto de Perfil">
+                <h1>JOHN DOE</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="infoPersonal">
+            <div class="container">
+                <div class="objetivo">
+                    <p>" Mi objetivo es formarme en el campo de las tecnologías de la información, especificamente como programador Back-end. Soy una persona responsable, atenta, perfeccionista y totalmente comprometido con mi labor. Trato de realizar mi tarea de la mejor manera posible e intento sacar lo mejor de mis compañeros. "</p>
+                </div>
+                
+                <div class="tituloPersonal">
+                    <h2>CONTACTO</h2>
+
+                    <button onclick="mostrarInfo('numeroTel');ocultar('email');ocultar('domicilio');" id="botonTelefono">Telefono</button>
+                    
+                    <button onclick="mostrarInfo('email');ocultar('numeroTel');ocultar('domicilio');" id="botonEmail">E-mail</button>
+                    
+                    <button onclick="mostrarInfo('domicilio');ocultar('numeroTel');ocultar('email');" id="botonDomicilio">Domicilio</button>
+
+                    <p id="numeroTel"> (000) 000-000</p>
+                    <p id="email"> johnDoe@gmail.com</p>
+                    <p id="domicilio">Av. Mitre 001 - Argentina</p>
+
+                </div>
+
+                <div class="tituloPersonal">
+                    <h2>APTITUDES</h2>
+                    <ul class="contenedorLista">
+                        <li>Flexibilidad</li>
+                        <li>Creatividad</li>
+                        <li>Resolución de conflictos</li>
+                        <li>Trabajo en equipo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="infoCv">
+            <div class="container">
+                <button onclick="mostrarInfo('experiencia'); ocultar('formacion');ocultar('competencias');" id="botonExperiencia"><h3>EXPERIENCIA</h3></button>
+                <div id="experiencia">
+                    
+                    <ul>
+                        <li>
+                            <h4>CIBER WORD CENTER</h4>
+                            <h5>2010-2012</h5>
+                            <h6>ENCARGADO</h6>
+                            <p>- Trabajos en computación varios</p>                
+                        </li>
+                        <li>
+                            <h4>SOTRICA S.A.</h4>
+                            <h5>2012-Actualmente</h5>
+                            <h6>RESPONSABLE ADMINISTRATIVO</h6>
+                            <p>- Cuentas Clientes-Proovedores</p>                            
+                        </li>
+                        <li>
+                            <h4>FIDEICOMISO SAN MARTIN 2550</h4>
+                            <h5>2016-Actualmente</h5>
+                            <h6>ADMINISTRADOR</h6>
+                            <p>- Adminitración de 42 unidades</p>                            
+                        </li>
+                    </ul>
+                    <button onclick="ocultar('experiencia')" class="contraer">▲</button>
+                </div>
+
+                <button onclick="mostrarInfo('formacion');ocultar('experiencia');ocultar('competencias');" id="botonFormacion"><h3>FORMACION</h3></button>
+                <div id="formacion">
+                    <ul>
+                        <li>
+                            <h4>EGG COOPERATION</h4>
+                            <h5>2022-2023</h5>
+                            <h6>PROGRAMADOR DESDE CERO</h6>
+                            <p>- Curso de 81hs. teóricas y prácticas de Lógica de Programación con pseudo código</p>
+                           
+                        </li>
+                        <li>
+                            <h4>ALURA LATAM - ORACLE</h4>
+                            <h5>2023-Actualmente</h5>
+                            <h6>PRINCIPIANTE EN PROGRAMACIÓN</h6>
+                            <p>- Curso introductorio en HTML5 - CSS3 - JavaScript</p>
+                        </li>
+                        <li>
+                            <h4>ARGENTINA PROGRAMA 4.0 - TICMAS ACADEMY</h4>
+                            <h5>2023-Actualmente</h5>
+                            <h6>PROGRAMADOR FRONT END</h6>
+                            <p>- Fundamentos de la programación</p>
+                        </li>
+                    </ul>
+                    <button onclick="ocultar('formacion')" class="contraer">▲</button>
+                </div>
+                <button onclick="mostrarInfo('competencias');ocultar('formacion');ocultar('experiencia');" id="botonCompetencias"><h3>COMPETENCIAS</h3></button>
+                <div id="competencias">
+                    <ul>
+                        <li>
+                            <h4>INFORMATICA</h4>
+                            <h5>PAQUETE OFFICE</h5>
+                            <h5>WINDOWS - LINUX</h5>
+                        </li>
+                        <li>                                   <h4>IDIOMAS</h4>
+                            <h5>INGLES NIVEL MEDIO</h5>
+                        </li>
+                    </ul>
+                    <button onclick="ocultar('competencias')" class="contraer">▲</button>
+                </div>
+            
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div id="redes">
+                <div id="face">
+                <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-square-facebook fa-2xl"></a>
+                <p>Facebook</p>
+                </div>
+                <div id="linkedin">
+                <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin fa-2xl"></a>
+                <p>Linkedin</p>
+                </div>
+                <div id="instagram">
+                <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-square-instagram fa-2xl"></a>
+                <p>Instagram</p>
+                </div>
+                <div id="github">
+                <a href="https://github.com/" target="_blank" class="fa-brands fa-square-github fa-2xl"></a>
+                <p>Github</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
