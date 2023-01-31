@@ -19,7 +19,7 @@
         <div class="containerHeader">
             <div id="perfil">
                 <img id="fotoPerfil" src="/Imagenes/CV.jpg" alt="Foto de Perfil">
-                <h1>JOHN DOE</h1>
+                <h1>JOHN CODE</h1>
             </div>
         </div>
     </header>
@@ -80,10 +80,10 @@
                             <h4>FIDEICOMISO SAN MARTIN 2550</h4>
                             <h5>2016-Actualmente</h5>
                             <h6>ADMINISTRADOR</h6>
-                            <p>- Adminitración de 42 unidades</p>                            
+                            <p>- Administración de 42 unidades</p>                            
                         </li>
                     </ul>
-                    <button onclick="ocultar('experiencia')" class="contraer">▲</button>
+                    <button onclick="ocultar('experiencia');centrar();" class="contraer">▲</button>
                 </div>
 
                 <button onclick="mostrarInfo('formacion');ocultar('experiencia');ocultar('competencias');" id="botonFormacion"><h3>FORMACION</h3></button>
@@ -109,7 +109,7 @@
                             <p>- Fundamentos de la programación</p>
                         </li>
                     </ul>
-                    <button onclick="ocultar('formacion')" class="contraer">▲</button>
+                    <button onclick="ocultar('formacion');centrar();" class="contraer">▲</button>
                 </div>
                 <button onclick="mostrarInfo('competencias');ocultar('formacion');ocultar('experiencia');" id="botonCompetencias"><h3>COMPETENCIAS</h3></button>
                 <div id="competencias">
@@ -123,10 +123,12 @@
                             <h5>INGLES NIVEL MEDIO</h5>
                         </li>
                     </ul>
-                    <button onclick="ocultar('competencias')" class="contraer">▲</button>
-                </div>
-            
+                    <button onclick="ocultar('competencias');centrar();" class="contraer">▲</button>
+                </div>        
 
+            </div>
+            <div id="imagenFinal">
+                <img id="fotoFinal" src="Imagenes/code.jpg">
             </div>
         </section>
     </main>

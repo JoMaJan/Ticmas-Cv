@@ -11,7 +11,6 @@ body{
 }
 
 
-
 h1{padding-bottom: 10px;}
 h2{font-size: 1.3em;}
 h3{color: #d9b310 ;font-weight: bold;}
@@ -20,7 +19,7 @@ h6{color:#0b3c5d;}
 
 
 .container{
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: 0 auto;
 }
 
@@ -40,7 +39,7 @@ header{
     opacity: 85%;
 }
 
-/*INFORMACION PERSONAL*/
+/*SECTION INFOPERSONAL*/
 
 
 
@@ -48,8 +47,7 @@ header{
     text-align: justify;
     font-size: 1em;
     margin: 2em 4em;
-    color: whitesmoke;
-    
+    color: whitesmoke;    
 }
 
 .tituloPersonal{
@@ -76,8 +74,7 @@ header{
     font-weight: bold;
     font-size: 0.75em;
     cursor: pointer;
-    background-color: #d9b310;
-    
+    background-color: #d9b310;    
 }
 
 #numeroTel, #email, #domicilio{
@@ -102,11 +99,12 @@ header{
 }
 
 
-/*INFORMACION CV*/
+/*SECTION INFOCV*/
 
 #infoCv{
     padding-bottom: 2em;
 }
+
 #infoCv button{
     margin: 10px auto;
     border-radius: 10px;
@@ -124,7 +122,6 @@ header{
     font-size: 0.75em;
     margin-left: 10px;
     font-style: italic;
-
 }
 
 
@@ -138,8 +135,13 @@ header{
     font-weight: bold;
 }
 
+#fotoFinal{
+    width: 100%;
+}
+
 
 /*FOOTER*/
+
 #redes{
     text-align: center;
     margin: 20px auto 0 auto;
@@ -160,4 +162,31 @@ header{
     font-weight: bold;
 }
 
+
 /*Media queries*/
+
+@media screen and (min-width:1000px){
+    main{
+        display: grid;
+        grid-template-columns: 30% 70%;                
+    }
+
+    #perfil{
+        display: grid;
+        grid-template-columns: 50% 50%;        
+    }
+
+    #fotoPerfil{
+        margin: 0 auto 20px;
+    }
+    h1{
+        text-align: left;
+        margin-top: 100px;
+    }
+    
+    #fotoFinal{
+        display: block;
+        width: 100%;
+    }
+
+}
