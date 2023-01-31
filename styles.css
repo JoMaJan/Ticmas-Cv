@@ -190,6 +190,7 @@ header{
 
     #botonReplegar{
         display: block;
+        transition: 2s all;
     }
     
     #fotoFinal{
